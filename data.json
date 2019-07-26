@@ -130,5 +130,62 @@
         }
       }
     }
+  },
+  "Conduct research": {
+    "type": "step",
+    "order": "3",
+    "relatives": {
+      "Consultation (internal)": {
+        "type": "process_document",
+        "relatives": {
+          "Dept. comms": {
+            "type": "actor"
+          },
+          "dept. subject matter experts": {
+            "type": "actor"
+          },
+          "dept. research branch": {
+            "type": "actor"
+          },
+          "dept. data/IM": {
+            "type": "actor"
+          }
+        }
+      },
+      "Consultation (external)": {
+        "type": "process_document",
+        "relatives": {
+          "Affected communities": {
+            "type": "actor"
+          },
+          "academic researchers": {
+            "type": "actor"
+          },
+          "other governments": {
+            "type": "actor"
+          }
+        }
+      },
+      "Public Opinion Research": {
+        "type": "process_document",
+        "relatives": {
+          "Dept. comms": {
+            "type": "actor"
+          },
+          "dept. contracting": {
+            "type": "actor"
+          },
+          "PSPC": {
+            "type": "actor"
+          },
+          "PCO": {
+            "type": "actor"
+          },
+          "POR provider": {
+            "type": "actor"
+          }
+        }
+      }
+    }
   }
 }
