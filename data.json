@@ -188,6 +188,195 @@
       }
     }
   },
+  "Implement (procure/build)": {
+    "type": "step",
+    "order": "4",
+    "relatives": {
+      "Project management documentation": {
+        "type": "process_document",
+        "children": [
+          "Business case and/or concept case",
+          "project brief",
+          "project gating plan",
+          "business requirements documents",
+          "independent project reviews"
+        ],
+        "relatives": {
+          "Dept. project management group": {
+            "type": "actor"
+          },
+          "dept. IT (e.g. business analysts, project managers)": {
+            "type": "actor"
+          },
+          "TBS OCIO": {
+            "type": "actor"
+          },
+          "independent reviewers": {
+            "type": "actor"
+          }
+        }
+      },
+      "Privacy documentation": {
+        "type": "process_document",
+        "children": [
+          "Pre-PIA checklist",
+          "Privacy Impact Assessment",
+          "privacy and consent notices"
+        ],
+        "relatives": {
+          "Dept. ATIP": {
+            "type": "actor"
+          },
+          "dept. legal": {
+            "type": "actor"
+          },
+          "dept. privacy committees": {
+            "type": "actor"
+          },
+          "Office of the Privacy Commissioner": {
+            "type": "actor"
+          },
+          "TBS IPPD": {
+            "type": "actor"
+          }
+        }
+      },
+      "IT architecture documentation": {
+        "type": "process_document",
+        "children": [
+          "Architecture diagrams",
+          "dept. ARB proposal",
+          "GC EARB presentation (x3)"
+        ],
+        "relatives": {
+          "Dept. IT EA": {
+            "type": "actor"
+          },
+          "dept. Architecture Review Board": {
+            "type": "actor"
+          },
+          "TBS OCIO": {
+            "type": "actor"
+          },
+          "GC EARB": {
+            "type": "actor"
+          }
+        }
+      },
+      "IT security documentation": {
+        "type": "process_document",
+        "children": [
+          "Security concept of operations",
+          "security assessment",
+          "Authority to Operate",
+          "tailored control profile",
+          "data security categorization",
+          "Threat Risk Analysis",
+          "SCTM"
+        ],
+        "relatives": {
+          "Dept. IT security": {
+            "type": "actor"
+          },
+          "dept. security": {
+            "type": "actor"
+          },
+          "dept. ATIP": {
+            "type": "actor"
+          },
+          "SSC IT security": {
+            "type": "actor"
+          },
+          "DSO/CSO": {
+            "type": "actor"
+          },
+          "CIO": {
+            "type": "actor"
+          }
+        }
+      },
+      "Build (internal)": {
+        "type": "process_document",
+        "children": [
+          "Annual IT plan inclusion",
+          "technical requirements documents",
+          "visual designs",
+          "QA plans",
+          "build book",
+          "infrastructure requests (SSC BRDs)",
+          "software code"
+        ],
+        "relatives": {
+          "Dept. IT APM": {
+            "type": "actor"
+          },
+          "dept. IT planning": {
+            "type": "actor"
+          },
+          "CIO": {
+            "type": "actor"
+          },
+          "dept. IT Ops": {
+            "type": "actor"
+          },
+          "dept. IT application development": {
+            "type": "actor"
+          },
+          "dept. IT QA": {
+            "type": "actor"
+          },
+          "TBS SCMA": {
+            "type": "actor"
+          },
+          "SSC infrastructure": {
+            "type": "actor"
+          }
+        }
+      },
+      "Build (external, i.e. procure)": {
+        "type": "process_document",
+        "children": [
+          "Annual IT plan inclusion",
+          "technical requirements documents",
+          "RFI",
+          "RFP",
+          "sole-source justification",
+          "evaluation & consensus",
+          "contract",
+          "contract amendments"
+        ],
+        "relatives": {
+          "Dept. IT APM": {
+            "type": "actor"
+          },
+          "dept. IT planning": {
+            "type": "actor"
+          },
+          "CIO": {
+            "type": "actor"
+          },
+          "dept. contracting": {
+            "type": "actor"
+          },
+          "dept. accounting": {
+            "type": "actor"
+          },
+          "SSC contracting": {
+            "type": "actor"
+          },
+          "evaluation committee": {
+            "type": "actor"
+          },
+          "PSPC": {
+            "type": "actor"
+          },
+          "vendor": {
+            "type": "actor"
+          }
+        }
+      }
+    }
+  },
   "Serve people": {
     "type": "step",
     "order": "5",
