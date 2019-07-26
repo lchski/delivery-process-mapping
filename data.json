@@ -1,10 +1,11 @@
 {
   "Get money and authority": {
     "type": "step",
-    "number": "1",
+    "order": "1",
     "relatives": {
       "Budget ($)": {
         "type": "process_document",
+        "order": "1",
         "relatives": {
           "Finance": {
             "type": "actor"
@@ -25,6 +26,7 @@
       },
       "MC (GiC authorities, mandate)": {
         "type": "process_document",
+        "order": "2",
         "relatives": {
           "Dept. strategic policy": {
             "type": "actor"
@@ -42,6 +44,7 @@
       },
       "TB Submission (spend authority)": {
         "type": "process_document",
+        "order": "3",
         "children": [
           "Project brief",
           "project charter",
@@ -69,6 +72,60 @@
           },
           "Treasury Board": {
               "type": "actor"
+          }
+        }
+      }
+    }
+  },
+  "Hire people, acquire materials": {
+    "type": "step",
+    "order": "2",
+    "relatives": {
+      "Competitions": {
+        "type": "process_document",
+        "order": "1",
+        "relatives": {
+          "Dept. HR": {
+            "type": "actor"
+          },
+          "PSC": {
+            "type": "actor"
+          }
+        }
+      },
+      "Staffing": {
+        "type": "process_document",
+        "order": "2",
+        "relatives": {
+          "Dept. HR": {
+            "type": "actor"
+          },
+          "Dept. Security": {
+            "type": "actor"
+          }
+        }
+      },
+      "Onboarding": {
+        "type": "process_document",
+        "order": "3",
+        "relatives": {
+          "Dept. HR": {
+            "type": "actor"
+          },
+          "PSPC (accommodation)": {
+            "type": "actor"
+          },
+          "CSPS (training)": {
+            "type": "actor"
+          },
+          "dept. IT (equipment": {
+            "type": "actor"
+          },
+          "accounts": {
+            "type": "actor"
+          },
+          "dept. Security (building pass)": {
+            "type": "actor"
           }
         }
       }
