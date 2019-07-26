@@ -187,5 +187,79 @@
         }
       }
     }
+  },
+  "Serve people": {
+    "type": "step",
+    "order": "5",
+    "relatives": {
+      "Operate service": {
+        "type": "process_document",
+        "relatives": {
+          "External partners": {
+            "type": "actor"
+          },
+          "dept. ATIP": {
+            "type": "actor"
+          },
+          "dept. comms": {
+            "type": "actor"
+          },
+          "people using the service": {
+            "type": "actor"
+          }
+        }
+      }
+    }
+  },
+  "Evaluate and report": {
+    "type": "step",
+    "order": "6",
+    "relatives": {
+      "User feedback and/or complaints": {
+        "type": "process_document",
+        "relatives": {
+          "People using the service": {
+            "type": "actor"
+          },
+          "dept. comms": {
+            "type": "actor"
+          },
+          "dept. ATIP": {
+            "type": "actor"
+          },
+          "Office of the Privacy Commissioner": {
+            "type": "actor"
+          }
+        }
+      },
+      "Program audit and evaluation": {
+        "type": "process_document",
+        "relatives": {
+          "Dept. audit and evaluation branch": {
+            "type": "actor"
+          },
+          "independent reviewers": {
+            "type": "actor"
+          },
+          "Office of the Auditor General": {
+            "type": "actor"
+          }
+        }
+      },
+      "Departmental reporting (PIP, MAF, DRP, DRF)": {
+        "type": "process_document",
+        "relatives": {
+          "Dept. strategic policy": {
+            "type": "actor"
+          },
+          "dept. audit and evaluation branch (performance measurement divisions)": {
+            "type": "actor"
+          },
+          "TBS": {
+            "type": "actor"
+          }
+        }
+      }
+    }
   }
 }
